@@ -173,6 +173,7 @@ Pictures/*
 .config/GIMP/*
 .config/Google/*
 .config/gtk*/*
+.config/guake/*
 .config/htop/*
 .config/Kvantum/*
 .config/libfm/*
