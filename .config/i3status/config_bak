@@ -1,0 +1,103 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 1
+        color_good = "#2AA198"
+        color_bad = "#5dbcd2"
+        color_degraded = "#DC322F"
+}
+       
+#order += "ipv6"
+order += "memory"
+order += "cpu_usage"
+order += "load"
+order += "cpu_temperature 0"
+order += "disk /"
+order += "wireless wlp3s0"
+order += "ethernet enp2s0"
+order += "ethernet enp0s20f0u1"
+order += "ethernet enp0s20f0u2"
+order += "ethernet enp0s20f0u3"
+order += "ethernet enp0s20f0u4"
+order += "ethernet enp0s20f0u5"
+order += "ethernet enp0s20f0u6"
+order += "ethernet enp0s20f0u7"
+order += "ethernet enp0s20f0u8"
+order += "ethernet enp0s20f0u9"
+order += "ethernet enp0s20f0u10"
+order += "battery all"
+order += "tztime local"
+order += "volume master"
+
+cpu_usage {
+        format = " 💻 CPU : %usage "
+}
+
+load {
+        format = " ⚓ Load : %1min "
+}
+
+disk "/" {
+        format = " 💽 : %avail "
+}
+
+ethernet enp2s0 {
+        format_up = " 🌐 Ethernet : %ip "
+        format_down = ""
+}
+
+ethernet enp0s20f0u1 {
+        format_up = " 🌐 Mob Ethernet : %ip "
+        format_down = ""
+}
+
+
+ethernet enp0s20f0u2 {
+        format_up = " 🌐 Mob Ethernet : %ip "
+        format_down = ""
+}
+
+ethernet enp0s20f0u3 {
+        format_up = " 🌐 Mob Ethernet : %ip "
+        format_down = ""
+}
+
+wireless wlp3s0 {
+        format_up = " 🌐 WiFi : %ip " 
+        format_down = ""
+}
+
+battery all {
+		format = " %status Bat % : %percentage  |  Time remaining : %remaining "
+        format_down = "No battery"
+        last_full_capacity = true
+        integer_battery_capacity = true
+        status_chr = "⚡"
+        status_bat = "☉"
+        status_unk = "?"
+        status_full = "☻"
+        low_threshold = 15
+        threshold_type = time
+}
+
+memory {
+		format = "🐏 RAM Used : %used "
+#       threshold_degraded = "1G"
+#        format_degraded = "MEMORY < %available "
+}
+
+tztime local {
+        format = " ⌚ Date : %d-%m-%Y  |  Time : %I:%M "
+}
+
+volume master {
+		format = " 🎶 : %volume "
+		format_muted = " 🎶 : Muted  "
+}

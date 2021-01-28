@@ -1,0 +1,10 @@
+configuration {
+	columns: 2;
+	m: -4;
+	drun-icon-theme: "Pop";
+	sidebar-mode: true;
+	show-icons: true;
+	width: 100;
+	lines: 6;
+}
+@import "/home/ashwini/.config/rofi/andrea.rasi"
