@@ -7,6 +7,7 @@
 #
 # ~/.bashrc
 #
+
 # Check if terminal is interactive or not
 [[ $- != *i* ]] && return
 

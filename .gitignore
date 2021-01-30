@@ -186,3 +186,4 @@ Pictures/*
 .config/pamac/*
 .config/pcmanfm/*
 .config/QtProject.conf
+.config/vlc/*
