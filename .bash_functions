@@ -56,14 +56,14 @@ git-config-backup(){
 		git status | less
 		read -p $'\e[93;1mDo you want to \'GIT commit\' and \'GIT push\' ... \e[1;97m (Y/N) \e[93;1m? : \e[0m' yn_gcb
 		if [[ "$yn_gcb" == "y" ]] || [[ "$yn_gcb" == "Y" ]]; then
-			echo "git commit -am $(date)" && git commit -am "$(date)"
-			echo "git push" && git push
-			echo "DONE"
+			echo -e "\ngit commit -am $(date)\n" && git commit -am "$(date)"
+			echo -e "\ngit push\n" && git push
+			echo -e "\nDONE\n"
 		else
-			echo "Wrogn INPUT, Program abborting....."
+			echo -e "\nWrogn INPUT, Program abborting.....\n"
 		fi
 	else
-		echo "Change to directory '/home/ashwini'"
+		echo -e "\nChange to directory '/home/ashwini'\n"
 	fi
 }
 
