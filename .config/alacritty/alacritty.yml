@@ -9,7 +9,9 @@ cursor:
   style: Beam
 
 key_bindings:
-  - { key: V,        mods: Control, action: Paste            }
+  - { key: V,         mods: Control, action: Paste            }
+  - { key: PageUp,    mode: ~Alt,        action: ScrollPageUp,  }
+  - { key: PageDown,  mode: ~Alt,        action: ScrollPageDown }
 
 colors:
   # Default colors

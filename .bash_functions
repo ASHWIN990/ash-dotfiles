@@ -44,9 +44,9 @@ sizeof(){
 # See the file/directory permission in OCTAL form.
 perms(){
 	if [[ "$@" == "" ]]; then
-		stat -c "%a %n" *
+		stat -c "%a - %n" *
 	else
-		stat -c "%a %n" "$@"
+		stat -c "%a - %n" "$@"
 	fi
 }
 
