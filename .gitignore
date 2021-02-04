@@ -1,3 +1,8 @@
+# All pdf files and docx
+*.pdf
+*.docx
+*.odf
+
 # Built application files
 *.apk
 *.aar

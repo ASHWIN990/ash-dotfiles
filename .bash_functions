@@ -54,11 +54,13 @@ perms(){
 git-config-backup(){
 	if [[ `pwd` == "/home/ashwini" ]]; then
 		git status | less
-		read -p $'\e[93;1mDo you want to \'GIT commit\' and \'GIT push\' ... \e[1;97m (Y/N) \e[93;1m? : \e[0m' yn_gcb
+		read -p $'\e[93;1mDo you want to \'GIT commit & push\' OR Press M to edit \'.gitignore\'... \e[1;97m (Y/N/M) \e[93;1m? : \e[0m' yn_gcb
 		if [[ "$yn_gcb" == "y" ]] || [[ "$yn_gcb" == "Y" ]]; then
 			echo -e "\ngit commit -am $(date)\n" && git commit -am "$(date)"
 			echo -e "\ngit push\n" && git push
 			echo -e "\nDONE\n"
+		elif [[ "$yn_gcb" == "m" ]] || [[ "$yn_gcb" == "M" ]]; then
+			micro /home/ashwini/.gitignore
 		else
 			echo -e "\nWrogn INPUT, Program abborting.....\n"
 		fi
