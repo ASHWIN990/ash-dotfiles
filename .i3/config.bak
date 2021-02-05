@@ -93,8 +93,7 @@ bindsym $mod+Shift+Right move right
 
 # workspace back and forth (with/without active container)
 workspace_auto_back_and_forth yes
-bindsym $mod+b workspace back_and_forth
-#bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
+bindsym $mod+Shift+Tab workspace back_and_forth
 bindsym Mod1+Tab workspace next
 bindsym $mod+Tab focus next
 
@@ -102,7 +101,6 @@ bindsym $mod+Tab focus next
 bindsym $mod+h bar mode toggle
 
 # split orientation
-bindsym $mod+v split v;exec notify-send 'Tile Vertically'
 bindsym $mod+q split toggle;exec notify-send 'Tile Toggle'
 
 # toggle fullscreen mode for the focused container
@@ -117,8 +115,8 @@ bindsym $mod+e layout toggle split;exec notify-send 'Layout Split Toggle'
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-#bindsym $mod+space focus mode_toggle
-
+bindsym $mod+space focus mode_toggle
+ 
 # toggle sticky
 bindsym $mod+Shift+s sticky toggle
 
@@ -185,12 +183,6 @@ bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 
-# Open applications on specific workspaces
-# assign [class="Thunderbird"] $ws1
-# assign [class="Pale moon"] $ws2
-# assign [class="Pcmanfm"] $ws3
-# assign [class="Skype"] $ws5
-
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="Clipgrab"] floating enable
@@ -211,10 +203,10 @@ for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
 for_window [class="Simple-scan"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
-#for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 for_window [class="UXTerm"] floating enable
 for_window [class="Sakura"] floating enable
+#for_window [class="Alacritty"] floating enable
 for_window [class="Blueman-manager"] floating enable
 for_window [class="Arcolinux-betterlockscreen.py"] floating enable
 for_window [class="stacer"] floating enable
@@ -223,7 +215,9 @@ for_window [class="mpv"] sticky enable
 for_window [title="Event Tester"] floating enable
 for_window [class="File-roller"] floating enable
 for_window [class="Cheese"] floating enable
-#for_window [class="Pcmanfm"] floating enable
+for_window [title="Guake Preferences"] floating enable
+for_window [title="Firewall"] floating enable
+for_window [class="scrcpy"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -258,14 +252,15 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; picom --experimental-backends -b
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
-#exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id /home/ashwini/.local/bin/battery_stat_launch.sh
+exec_always --no-startup-id /home/ashwini/.local/bin/curr-media-launch.sh
 exec --no-startup-id guake
 exec_always --no-startup-id /home/ashwini/.local/bin/alternating_layouts.py
+exec --no-startup-id /usr/bin/start_conky_grey
 
 # Control media playback
 bindsym XF86AudioPrev exec "/usr/bin/playerctl previous"
@@ -275,26 +270,6 @@ bindsym XF86AudioPlay exec "/usr/bin/playerctl play-pause"
 # Top Buttons config
 bindsym XF86AudioMicMute exec "bash /home/ashwini/.local/bin/mic-mute/mic-mute.sh"
 bindsym Shift+F5 exec "i3-msg reload && i3-msg restart && notify-send 'Reload & Restart the I3WM'";
-
-# Color palette used for the terminal ( ~/.Xresources file )
-set_from_resource $term_background background
-set_from_resource $term_foreground foreground
-set_from_resource $term_color0     color0
-set_from_resource $term_color1     color1
-set_from_resource $term_color2     color2
-set_from_resource $term_color3     color3
-set_from_resource $term_color4     color4
-set_from_resource $term_color5     color5
-set_from_resource $term_color6     color6
-set_from_resource $term_color7     color7
-set_from_resource $term_color8     color8
-set_from_resource $term_color9     color9
-set_from_resource $term_color10    color10
-set_from_resource $term_color11    color11
-set_from_resource $term_color12    color12
-set_from_resource $term_color13    color13
-set_from_resource $term_color14    color14
-set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
@@ -308,13 +283,13 @@ bar {
 
 	bindsym button4 nop
 	bindsym button5 nop
-#   font xft:URWGothic-Book 11
+    font xft:URWGothic-Book 11
 	strip_workspace_numbers yes
 
     colors {
-        background #0000002
+        background #000000
         statusline #F9FAF9
-    separator     #000000ff
+    	separator  #000000
 #                          BORDER  BACKGROUND TEXT
         focused_workspace  #ffffff #000000 #ffffff
         active_workspace   #ffffff #000000 #ffffff
@@ -342,7 +317,7 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 25
+gaps inner 20
 gaps outer 1
 #gaps inner 14
 #gaps outer -2

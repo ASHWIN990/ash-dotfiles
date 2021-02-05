@@ -193,3 +193,4 @@ Pictures/*
 .config/QtProject.conf
 .config/vlc/*
 .config/superpaper/*
+.pycrust/*
