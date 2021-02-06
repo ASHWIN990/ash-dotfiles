@@ -194,3 +194,5 @@ Pictures/*
 .config/vlc/*
 .config/superpaper/*
 .pycrust/*
+.config/octopi/*
+.config/opera/*
