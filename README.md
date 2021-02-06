@@ -10,7 +10,7 @@
 
 <table>
 <tr>
-    <td><b>OS</b></td>
+    <td><b>GNU/Linux Distro</b></td>
     <td><b><i>Manjaro I3-Editon</i></b></td>
 </tr>
 <tr>
