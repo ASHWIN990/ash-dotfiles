@@ -196,3 +196,5 @@ Pictures/*
 .pycrust/*
 .config/octopi/*
 .config/opera/*
+.gnupg/*
+.config/spotify/*
