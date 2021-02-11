@@ -198,3 +198,5 @@ Pictures/*
 .config/opera/*
 .gnupg/*
 .config/spotify/*
+.config/menus/*
+.gnome/*

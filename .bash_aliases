@@ -22,4 +22,4 @@ alias feh="swallow feh"
 alias ccopy='xclip -selection clipboard'
 alias cpaste='xclip -selection clipboard -o'
 alias nano="echo -e '\e[1;7;92mYOUR EDITOR IS 'MICRO'\e[0m'"
-alias youtube-dl="echo -e 'youtube-dl -f 'bestvideo+bestaudio/bestvideo+bestaudio' video-link'"
+alias youtube-dl-sample="echo -e 'youtube-dl -f 'bestvideo+bestaudio/bestvideo+bestaudio' video-link'"
