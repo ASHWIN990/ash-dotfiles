@@ -31,7 +31,7 @@ complete -cf sudo
 shopt -s checkwinsize
 shopt -s expand_aliases
 shopt -s histappend # Enable history appending instead of overwriting.  #139609
-shopt -s autocd  # Auto cd
+shopt -s autocd  # Auto cd when just directory name provided
 shopt -s cdspell # Minor errors in the spelling of a directory component in a cd command are corrected
 shopt -s cmdhist # bash attempts to save all lines of a multiple-line command in the same history entry.
 
