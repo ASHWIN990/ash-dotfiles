@@ -1,8 +1,8 @@
 # First adding all the files in ignorelist 
 *
 
+# Just add the directory and file names you want to added in git repo
 # Whitelisting the files i needed
-
 !.i3/*
 !.bash_aliases
 !.bash_aliases
@@ -24,4 +24,3 @@
 !.config/sakura/*
 !.config/vis/*
 !.config/home-screen.png
-
