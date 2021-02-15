@@ -6,6 +6,7 @@
 #   \_| |_/\____/\_| |_/           \___/\____/  \/  \/\_|  |_/
 #
 # i3 config file (v4)
+#
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
