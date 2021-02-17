@@ -16,7 +16,7 @@ key_bindings:
 colors:
   # Default colors
   primary:
-    background: '#000000'
+    background: '#101010'
     foreground: '#dddddd'
 
   # Normal colors

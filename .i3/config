@@ -43,7 +43,7 @@ bindsym $mod+Shift+Return exec alacritty_CWD
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id dmenu_recency -h 24 -nb '#000000' -sf '#ffffff' -sb '#303030' -nf '#adadad'
+bindsym $mod+d exec --no-startup-id dmenu_recency
 
 # launch rofi program launcher
 bindsym $mod+Shift+d exec --no-startup-id rofi -show drun -show-icons
@@ -284,14 +284,14 @@ bar {
 	strip_workspace_numbers yes
 
     colors {
-        background #000000
+        background #101010
         statusline #F9FAF9
-    	separator  #000000
+    	separator  #101010
 #                          BORDER  BACKGROUND TEXT
-        focused_workspace  #ffffff #000000 #ffffff
-        active_workspace   #ffffff #000000 #ffffff
-        inactive_workspace #262626 #000000 #666666
-        binding_mode       #ffffff #000000 #ffffff
+        focused_workspace  #ffffff #101010 #ffffff
+        active_workspace   #ffffff #101010 #ffffff
+        inactive_workspace #262626 #101010 #666666
+        binding_mode       #ffffff #101010 #ffffff
         urgent_workspace   #ffffff #ffffff #000000
     }
 }
