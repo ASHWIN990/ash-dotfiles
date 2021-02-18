@@ -40,6 +40,7 @@ colors:
     magenta: '#fd28ff'
     cyan:    '#14ffff'
     white:   '#ffffff'
+
 # Font configuration (changes require restart)
 font:
   normal:
