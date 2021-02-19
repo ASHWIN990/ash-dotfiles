@@ -215,6 +215,7 @@ for_window [title="Guake Preferences"] floating enable
 for_window [title="Firewall"] floating enable
 for_window [class="scrcpy"] floating enable
 for_window [class="Chromium" window_role="pop-up"] floating enable
+for_window [class="kdeconnect*"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -316,9 +317,6 @@ bindsym $mod+m bar mode toggle
 # Set inner/outer gaps
 gaps inner 20
 gaps outer 1
-#gaps inner 14
-#gaps outer -2
-
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
