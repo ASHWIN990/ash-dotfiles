@@ -16,7 +16,6 @@
 !.dmenurc
 !.profile
 !README.md
-
 !.config/alacritty/*
 !.config/guake/*
 !.config/i3status/*
@@ -26,7 +25,6 @@
 !.config/sakura/*
 !.config/vis/*
 !.config/home-screen.png
-
 !.local/bin/mic-mute/*
 !.local/bin/alacritty_CWD
 !.local/bin/alternating_layouts.py

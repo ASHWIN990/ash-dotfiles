@@ -107,5 +107,5 @@ tztime date {
 
 volume master {
 		format = "🔊 : %volume"
-		format_muted = " 🔇"
+		format_muted = "🔇"
 }
