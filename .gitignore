@@ -15,15 +15,6 @@
 !.dmenurc
 !.profile
 !README.md
-!.config/alacritty/*
-!.config/guake/*
-!.config/i3status/*
-!.config/picom/*
-!.config/rofi/*
-!.config/psexec_adb/*
-!.config/sakura/*
-!.config/vis/*
-!.config/home-screen.png
 
 !.local/bin/mic-mute/*
 !.local/bin/alacritty_CWD
@@ -48,3 +39,13 @@
 !.local/bin/picom_trans
 !.local/bin/scrshot
 !.local/bin/search
+
+!.config/alacritty/*
+!.config/guake/*
+!.config/i3status/*
+!.config/picom/*
+!.config/rofi/*
+!.config/psexec_adb/*
+!.config/sakura/*
+!.config/vis/*
+!.config/home-screen.png
