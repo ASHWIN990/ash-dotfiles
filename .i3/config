@@ -216,6 +216,7 @@ for_window [title="Firewall"] floating enable
 for_window [class="scrcpy"] floating enable
 for_window [class="Chromium" window_role="pop-up"] floating enable
 for_window [class="kdeconnect*"] floating enable
+for_window [class="Arandr"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
