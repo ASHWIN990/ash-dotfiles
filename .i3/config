@@ -62,7 +62,6 @@ bindsym $mod+z exec --no-startup-id morc_menu
 exec_always --no-startup-id numlockx on
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id pa-applet
-bindsym $mod+Ctrl+m exec pavucontrol
 
 ################################################################################################
 
@@ -82,6 +81,7 @@ bindsym $mod+Ctrl+e exec --no-startup-id pcmanfm
 bindsym $mod+Shift+n exec sakura -e 'nmtui'
 bindsym $mod+Shift+t --release exec --no-startup-id picom_trans
 bindsym $mod+Shift+b --release exec --no-startup-id blueman-manager
+bindsym $mod+Shift+m --release exec --no-startup-id pavucontrol
 bindsym $mod+Shift+p --release exec --no-startup-id dmenuunicode
 
 # focus_follows_mouse no
@@ -215,6 +215,7 @@ for_window [title="Guake Preferences"] floating enable
 for_window [title="Firewall"] floating enable
 for_window [class="scrcpy"] floating enable
 for_window [class="Chromium" window_role="pop-up"] floating enable
+for_window [title="Picture in picture"], move absolute position 22 px 45 px
 for_window [class="kdeconnect*"] floating enable
 for_window [class="Arandr"] floating enable
 
