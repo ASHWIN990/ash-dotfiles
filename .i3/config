@@ -218,6 +218,7 @@ for_window [class="Chromium" window_role="pop-up"] floating enable
 for_window [title="Picture in picture"], move absolute position 22 px 45 px
 for_window [class="kdeconnect*"] floating enable
 for_window [class="Arandr"] floating enable
+for_window [class="pyshell"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
