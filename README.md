@@ -1,6 +1,6 @@
 <h1 align="center">ash-dotfiles</h1>
 
-<h3 align="left">My personal machine DOT FILES.</h3>
+<h3 align="left">My personal machine DOT FILES</h3>
 
 <h2 align="center">My Home Screen...</h2>
 
