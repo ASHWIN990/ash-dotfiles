@@ -37,3 +37,4 @@ shopt -s cmdhist # bash attempts to save all lines of a multiple-line command in
 
 # ASCII ART
 $(echo -e "elfman \npanes \ncolorwheel \ncrunchbang-mini\n pfetch\n ghost" | shuf | head -n 1)
+
