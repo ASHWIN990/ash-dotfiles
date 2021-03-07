@@ -305,7 +305,7 @@ bar {
 	strip_workspace_numbers yes
 
     colors {
-		background #000000
+		background #0E0A19
         statusline #F9FAF9
     	separator  #000000
 #                          BORDER  BACKGROUND TEXT
@@ -344,7 +344,7 @@ gaps outer 1
 # gaps outer all plus 5
 
 # Smart gaps (gaps used if only more than one container on the workspace)
-#smart_gaps on
+smart_gaps on
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
