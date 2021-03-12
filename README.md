@@ -6,6 +6,7 @@
 
 <img align="center" src="https://raw.githubusercontent.com/ASHWIN990/ash-dotfiles/main/.config/home-screen.png">
 
+
 <h2 align="left">Some Info...</h2>
 
 <table>
