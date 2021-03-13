@@ -22,6 +22,7 @@ order += "cpu_temperature 0"
 order += "disk /"
 order += "wireless wlp3s0"
 order += "wireless wlp0s20f0u1"
+order += "wireless wlp0s20f0u3"
 order += "ethernet enp2s0"
 order += "ethernet enp0s20f0u1"
 order += "ethernet enp0s20f0u2"
@@ -86,6 +87,11 @@ wireless wlp3s0 {
 }
 
 wireless wlp0s20f0u1 {
+        format_up = "🌐 : %ip" 
+        format_down = ""
+}
+
+wireless wlp0s20f0u3 {
         format_up = "🌐 : %ip" 
         format_down = ""
 }
