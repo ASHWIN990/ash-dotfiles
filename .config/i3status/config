@@ -82,17 +82,17 @@ ethernet enp0s20f0u3 {
 }
 
 wireless wlp3s0 {
-        format_up = "🌐 : %ip" 
+        format_up = "🌐 PCI : %ip" 
         format_down = ""
 }
 
 wireless wlp0s20f0u1 {
-        format_up = "🌐 : %ip" 
+        format_up = "🌐 USB : %ip" 
         format_down = ""
 }
 
 wireless wlp0s20f0u3 {
-        format_up = "🌐 : %ip" 
+        format_up = "🌐 USB : %ip" 
         format_down = ""
 }
 

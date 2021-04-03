@@ -78,6 +78,11 @@ git-config-backup(){
 	fi
 }
 
+# Download videos from internet using youtube-dl
+youtube-downloader(){
+	youtube-dl -f 'bestvideo+bestaudio/bestvideo+bestaudio' "$@"
+}
+
 # Another CTRL-R script to insert the selected command from history into the command line/region
 __fzf_history(){
     builtin history -a;
