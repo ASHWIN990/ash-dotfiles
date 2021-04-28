@@ -35,6 +35,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec terminal
+bindsym $mod+KP_Enter exec terminal
 
 # start a terminal in same directory
 bindsym $mod+Shift+Return exec alacritty_CWD
@@ -153,9 +154,7 @@ set $ws6 6
 set $ws7 7
 set $ws8 8
 set $ws9 9
-set $ws9 10
-set $ws9 11
-set $ws9 12
+set $ws0 10
 
 bindsym $mod+Ctrl+r exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
 
@@ -223,6 +222,7 @@ for_window [class="Lxappearance"] floating enable sticky enable border normal
 for_window [class="Manjaro Settings Manager"] floating enable border normal
 for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="Nitrogen"] floating enable sticky enable border normal
+for_window [class="Blueman-manager"] floating enable sticky enable border normal
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
@@ -238,7 +238,7 @@ for_window [class="octopi"] floating enable
 for_window [class="Blueman-manager"] floating enable
 for_window [class="Arcolinux-betterlockscreen.py"] floating enable
 for_window [class="stacer"] floating enable
-for_window [class="Chromium"] rename 
+for_window [class="Google-chrome"] rename 
 for_window [class="mpv"] sticky enable
 for_window [title="Event Tester"] floating enable
 for_window [class="File-roller"] floating enable
@@ -246,13 +246,14 @@ for_window [class="Cheese"] floating enable
 for_window [title="Guake Preferences"] floating enable
 for_window [title="Firewall"] floating enable
 for_window [class="scrcpy"] floating enable
-for_window [class="Chromium" window_role="pop-up"] floating enable
+for_window [class="Google-chrome" window_role="pop-up"] floating enable
 for_window [title="Picture in picture"], move absolute position 22 px 45 px
 for_window [class="kdeconnect*"] floating enable
 for_window [class="Arandr"] floating enable
 for_window [class="pyshell"] floating enable
 for_window [class="realvnc-vncviewer"] floating enable
 for_window [class="org.remmina.Remmina"] floating enable
+for_window [class="Gnome-boxes"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus

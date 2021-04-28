@@ -83,6 +83,15 @@ youtube-downloader(){
 	youtube-dl -f 'bestvideo+bestaudio/bestvideo+bestaudio' "$@"
 }
 
+# ASCII ART
+ascii-art(){
+if [ `(tput cols)` -lt "35" ]; then
+	$(echo -e "elfman \ncolorwheel \ncrunchbang-mini" | shuf | head -n 1)
+else
+	$(echo -e "elfman \npanes \ncolorwheel \ncrunchbang-mini\n pfetch\n ghost" | shuf | head -n 1)
+fi
+}
+
 # Another CTRL-R script to insert the selected command from history into the command line/region
 __fzf_history(){
     builtin history -a;
