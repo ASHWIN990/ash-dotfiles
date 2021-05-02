@@ -23,7 +23,7 @@
 # Source the bash ps1
 [[ -f ~/.bash_ps1 ]] && . ~/.bash_ps1
 
-# Some requires stuffs
+# Some required stuffs
 xhost +local:root > /dev/null 2>&1
 complete -cf sudo
 
