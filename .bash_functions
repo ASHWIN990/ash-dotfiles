@@ -32,20 +32,24 @@ ex ()
   fi
 }
 
+
+# While loop implimentation
 while_loop(){
-	#while true; do "$@"; done
-	echo -e "\nwhile true; do cmd; done"
+	while true; do "$@"; done
 }
 
+# process checking and finding using grep
 psaux(){
 	ps aux | grep "$@"
 }
 
+# VLC cli launcher in specified folder 
 avlc(){
 	avlc_path="/home/ashwini/Media/Videos/Music-Video"
 	/usr/bin/nvlc "$avlc_path"
 }
 
+# Find the file size of file and dirs
 sizeof(){
 	du -sh "$@"
 }
