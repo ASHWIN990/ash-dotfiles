@@ -8,6 +8,20 @@
 # ~/.bash_functions
 #
 
+function ls (){
+	LS_COMMAND="/usr/bin/exa -l --color=always --group-directories-first --icons"
+	LS_COMMAND_ALL="/usr/bin/exa -la --color=always --group-directories-first --icons"
+	
+	ls_output=$($LS_COMMAND)
+	
+	if [[ $ls_output == "" ]]
+	    then
+	        $LS_COMMAND_ALL
+	    else
+	        $LS_COMMAND
+	fi
+}
+
 ex ()
 # # ex - archive extractor
 # # usage: ex <file>

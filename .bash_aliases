@@ -18,7 +18,7 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='/usr/bin/nano -w PKGBUILD'
 alias more=less
-alias ls='/usr/bin/exa -l --color=always --group-directories-first --icons' # my preferred listing
+#alias ls='/usr/bin/exa -l --color=always --group-directories-first --icons' # my preferred listing
 alias la='/usr/bin/exa -alh --color=always --group-directories-first --icons'  # all files and dirs
 alias ll='/usr/bin/exa -Ga --color=always --group-directories-first --icons'  # long format
 alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
