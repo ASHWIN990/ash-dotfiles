@@ -11,14 +11,19 @@
 function ls (){
 	LS_COMMAND="/usr/bin/exa -l --color=always --group-directories-first --icons"
 	LS_COMMAND_ALL="/usr/bin/exa -la --color=always --group-directories-first --icons"
-	
-	ls_output=$($LS_COMMAND)
-	
-	if [[ $ls_output == "" ]]
-	    then
-	        $LS_COMMAND_ALL
-	    else
-	        $LS_COMMAND
+
+	if [[ $@ != "" ]]
+		then
+			$LS_COMMAND $@
+		else
+			ls_output=$($LS_COMMAND)		
+			if [[ $ls_output == "" ]]
+			    then
+			        $LS_COMMAND_ALL
+			    else
+			        $LS_COMMAND
+			fi
+
 	fi
 }
 
