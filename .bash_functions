@@ -103,7 +103,18 @@ git-config-backup(){
 
 # Download videos from internet using youtube-dl
 youtube-downloader(){
-	youtube-dl -f 'bestvideo+bestaudio/bestvideo+bestaudio' "$@"
+	if echo "$@" | grep -q "list="
+		then
+			read -p "Playlist Detected.. Download Whole Playlist [Y/N] : " opt
+				if [[ "$opt" == "Y" ]] || [[ "$opt" == "y" ]]
+					then
+						youtube-dl -f 'bestvideo+bestaudio/bestvideo+bestaudio' "$@"
+					else
+						youtube-dl -f 'bestvideo+bestaudio/bestvideo+bestaudio' "$@" --no-playlist
+				fi
+		else
+			youtube-dl -f 'bestvideo+bestaudio/bestvideo+bestaudio' "$@"
+	fi
 }
 
 # ASCII ART
