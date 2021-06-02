@@ -84,6 +84,7 @@ perms(){
 
 # Backup all config files in github
 git-config-backup(){
+
 	if [[ `pwd` == "/home/ashwini" ]]; then
 		git status | less
 		read -p $'\e[93;1mDo you want to \'GIT commit & push\' OR Press M to edit \'.gitignore\'... \e[1;97m (Y/N/M) \e[93;1m? : \e[0m' yn_gcb
