@@ -311,7 +311,6 @@ bindsym XF86AudioMicMute exec "bash /home/ashwini/.local/bin/mic-mute/mic-mute.s
 bindsym Shift+F5 exec "i3-msg reload && i3-msg restart && notify-send 'Reload & Restart the I3WM'";
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
-
 bar {
 	i3bar_command i3bar
 	status_command i3status
