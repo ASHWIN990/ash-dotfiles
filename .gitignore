@@ -7,11 +7,9 @@
 !.i3/*
 !.bash_aliases
 !.bash_aliases
-!.bash_history
 !.bash_profile
 !.bashrc
 !.bash_functions
-!.bash_logout
 !.bash_ps1
 !.dmenurc
 !.profile
@@ -25,7 +23,6 @@
 !.config/sakura/*
 !.config/vis/*
 !.config/home-screen.png
-
 !.local/bin/mic-mute/*
 !.local/bin/alacritty_CWD
 !.local/bin/alternating_layouts.py
