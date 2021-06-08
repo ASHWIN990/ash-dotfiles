@@ -8,7 +8,6 @@
 # i3 config file (v4)
 #
 
-
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
@@ -219,8 +218,8 @@ for_window [class="Lightdm-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
 for_window [class="Manjaro Settings Manager"] floating enable border normal
 for_window [title="MuseScore: Play Panel"] floating enable
-for_window [class="Nitrogen"] floating enable sticky enable border normal
-for_window [class="Blueman-manager"] floating enable sticky enable border normal
+for_window [class="Nitrogen"] floating enable sticky enable
+for_window [class="Blueman-manager"] floating enable 
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
@@ -249,6 +248,7 @@ for_window [class="Google-chrome" window_role="pop-up"] floating enable
 for_window [title="Picture in picture"], move absolute position 22 px 45 px
 for_window [class="kdeconnect*"] floating enable
 for_window [class="Arandr"] floating enable
+for_window [class="bootsplash-manager-gui"] floating enable
 for_window [class="pyshell"] floating enable
 for_window [class="realvnc-vncviewer"] floating enable
 for_window [class="org.remmina.Remmina"] floating enable
@@ -292,8 +292,8 @@ exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-exec_always --no-startup-id /home/ashwini/.local/bin/battery_stat_launch.sh
-exec_always --no-startup-id /home/ashwini/.local/bin/curr-media-launch.sh
+#exec_always --no-startup-id /home/ashwini/.local/bin/battery_stat_launch.sh
+#exec_always --no-startup-id /home/ashwini/.local/bin/curr-media-launch.sh
 exec --no-startup-id guake
 exec_always --no-startup-id /home/ashwini/.local/bin/alternating_layouts.py
 exec --no-startup-id /usr/bin/start_conky_grey
@@ -304,7 +304,7 @@ bindsym XF86AudioNext exec "/usr/bin/playerctl next"
 bindsym XF86AudioPlay exec "/usr/bin/playerctl play-pause"
 
 # Top Buttons config
-bindsym XF86AudioMicMute exec "bash /home/ashwini/.local/bin/mic-mute/mic-mute.sh"
+#bindsym XF86AudioMicMute exec "bash /home/ashwini/.local/bin/mic-mute/mic-mute.sh"
 bindsym Shift+F5 exec "i3-msg reload && i3-msg restart && notify-send 'Reload & Restart the I3WM'";
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
