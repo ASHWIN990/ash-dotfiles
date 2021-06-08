@@ -253,6 +253,7 @@ for_window [class="pyshell"] floating enable
 for_window [class="realvnc-vncviewer"] floating enable
 for_window [class="org.remmina.Remmina"] floating enable
 for_window [class="Gnome-boxes"] floating enable
+for_window [class="Gnome-sound-recorder"] floating enable
 #for_window [class="Vlc"] sticky enable resize set 400 300 
 
 # switch to workspace with urgent window automatically
@@ -293,7 +294,7 @@ exec --no-startup-id blueman-applet
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 #exec_always --no-startup-id /home/ashwini/.local/bin/battery_stat_launch.sh
-#exec_always --no-startup-id /home/ashwini/.local/bin/curr-media-launch.sh
+exec_always --no-startup-id /home/ashwini/.local/bin/curr-media-launch.sh
 exec --no-startup-id guake
 exec_always --no-startup-id /home/ashwini/.local/bin/alternating_layouts.py
 exec --no-startup-id /usr/bin/start_conky_grey

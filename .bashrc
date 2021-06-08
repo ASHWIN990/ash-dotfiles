@@ -36,4 +36,4 @@ shopt -s cdspell	# Minor errors in the spelling of a directory component in a cd
 shopt -s cmdhist 	# bash attempts to save all lines of a multiple-line command in the same history entry.
 
 # ASCII ART
-ascii-art
+#ascii-art
