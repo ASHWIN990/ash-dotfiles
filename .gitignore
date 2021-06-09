@@ -14,6 +14,7 @@
 !.dmenurc
 !.profile
 !README.md
+!Templates/*
 !.config/alacritty/*
 !.config/guake/*
 !.config/i3status/*
