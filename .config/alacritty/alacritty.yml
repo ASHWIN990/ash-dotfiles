@@ -17,10 +17,10 @@ key_bindings:
   - { key: H,         mods: Control,     chars: "cd \x0D" }
 
 # Shell
-shell:
-  program: /bin/bash
-  args:
-    - --login  
+#shell:
+#  program: /bin/bash
+#  args:
+#    - --login  
 
 #Colors
 colors:
