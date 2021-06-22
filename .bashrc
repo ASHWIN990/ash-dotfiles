@@ -23,6 +23,9 @@
 # Source the bash ps1
 [[ -f ~/.bash_ps1 ]] && . ~/.bash_ps1
 
+# Randomly insults the user when typing wrong command
+[[ -f /etc/bash.command-not-found ]] && . /etc/bash.command-not-found
+
 # Some required stuffs
 xhost +local:root > /dev/null 2>&1
 complete -cf sudo
@@ -34,6 +37,9 @@ shopt -s histappend # Enable history appending instead of overwriting  #139609
 shopt -s autocd  	# Auto cd when just directory name provided
 shopt -s cdspell	# Minor errors in the spelling of a directory component in a cd command are corrected
 shopt -s cmdhist 	# bash attempts to save all lines of a multiple-line command in the same history entry
+
+# Initializing COD (completion daemon for bash)
+source <(cod init $$ bash)
 
 # ASCII ART
 ascii-art

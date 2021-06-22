@@ -16,6 +16,12 @@ key_bindings:
   - { key: PageDown,  mode: ~Alt,        action: ScrollPageDown }
   - { key: H,         mods: Control,     chars: "cd \x0D" }
 
+# Shell
+shell:
+  program: /bin/bash
+  args:
+    - --login  
+
 #Colors
 colors:
   # Default colors
