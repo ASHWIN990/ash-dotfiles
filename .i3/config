@@ -79,6 +79,7 @@ bindsym $mod+Shift+t --release exec --no-startup-id picom_trans
 bindsym $mod+Shift+b --release exec --no-startup-id blueman-manager
 bindsym $mod+Shift+m --release exec --no-startup-id pavucontrol
 bindsym $mod+Shift+p --release exec --no-startup-id dmenuunicode
+bindsym $mod+Ctrl+c --release exec --no-startup-id gnome-calculator
 
 # focus_follows_mouse no
 
@@ -212,7 +213,7 @@ for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="Clipgrab"] floating enable
 for_window [title="File Transfer*"] floating enable
 for_window [class="fpakman"] floating enable
-for_window [class="Galculator"] floating enable border pixel 1
+for_window [class="Gnome-calculator"] floating enable
 for_window [class="GParted"] floating enable border normal
 for_window [class="Lightdm-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
