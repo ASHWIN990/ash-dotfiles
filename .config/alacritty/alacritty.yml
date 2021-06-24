@@ -17,10 +17,10 @@ key_bindings:
   - { key: H,         mods: Control,     chars: "cd \x0D" }
 
 # Shell
-#shell:
-#  program: /bin/bash
-#  args:
-#    - --login  
+# shell:
+    # program: /bin/zsh
+    # args:
+    # - --login
 
 #Colors
 colors:
@@ -50,6 +50,7 @@ colors:
     magenta: '#fd28ff'
     cyan:    '#14ffff'
     white:   '#ffffff'
+
 
 # Font configuration (changes require restart)
 font:

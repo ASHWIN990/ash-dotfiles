@@ -21,7 +21,7 @@
 [[ -f ~/.bash_functions ]] && . ~/.bash_functions
 
 # Source the bash ps1
-[[ -f ~/.bash_ps1 ]] && . ~/.bash_ps1
+#[[ -f ~/.bash_ps1 ]] && . ~/.bash_ps1
 
 # Randomly insults the user when typing wrong command
 [[ -f /etc/bash.command-not-found ]] && . /etc/bash.command-not-found
@@ -44,3 +44,5 @@ source <(cod init $$ bash)
 # ASCII ART
 ascii-art
 
+# Initializing startship 
+eval "$(starship init bash)"
