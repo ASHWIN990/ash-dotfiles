@@ -118,6 +118,11 @@ youtube-downloader(){
 	fi
 }
 
+# Youtube to 320Kbps audio
+youtube-to-audio(){
+	youtube-dl -f "bestaudio/best" --audio-quality 0 -ciw -o "%(title)s.%(ext)s" -x --embed-thumbnail --audio-format mp3 "$@"
+}
+
 # ASCII ART
 ascii-art(){
 if [ `(tput cols)` -lt "35" ]; then
