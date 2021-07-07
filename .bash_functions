@@ -123,6 +123,16 @@ youtube-to-audio(){
 	youtube-dl -f "bestaudio/best" --audio-quality 0 -ciw -o "%(title)s.%(ext)s" -x --embed-thumbnail --audio-format mp3 "$@"
 }
 
+# PHP Webserver
+php-webserver(){
+	if [[ "$1" == "" ]]
+		then
+			php -S localhost:8888
+		else
+			php -S localhost:"$1"
+	fi
+}
+
 # ASCII ART
 ascii-art(){
 if [ `(tput cols)` -lt "35" ]; then
