@@ -256,6 +256,7 @@ for_window [class="org.remmina.Remmina"] floating enable
 for_window [class="Gnome-boxes"] floating enable
 for_window [class="Virt-manager"] floating enable
 for_window [class="Gnome-sound-recorder"] floating enable
+for_window [class="Steadyflow"] floating enable
 #for_window [class="Vlc"] sticky enable resize set 400 300 
 
 # switch to workspace with urgent window automatically
