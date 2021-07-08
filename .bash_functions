@@ -14,7 +14,7 @@ function ls (){
 
 	if [[ $@ != "" ]]
 		then
-			$LS_COMMAND $@
+			$LS_COMMAND "$@"
 		else
 			ls_output=$($LS_COMMAND)		
 			if [[ $ls_output == "" ]]
