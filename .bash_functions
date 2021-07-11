@@ -102,6 +102,16 @@ git-config-backup(){
 	fi
 }
 
+# Git add && git commit
+git-add-commit() {
+
+	GIT_PATH="/usr/bin/git"
+	echo -e "\n\e[4;96mADDING THE FILE TO THE REPO\n\e[0m" && $GIT_PATH add .	
+	echo -e "\n\e[4;96mADDING THE COMMIT TO REPO\n\e[0m" && $GIT_PATH commit -m "$(date)"
+	echo -e "\n\e[4;96mYOU DO THE 'git push'\e[0m"
+
+}
+
 # Download videos from internet using youtube-dl
 youtube-downloader(){
 	if echo "$@" | grep -q "list="

@@ -14,7 +14,7 @@ key_bindings:
   - { key: V,         mods: Control,     action: Paste          }
   - { key: PageUp,    mode: ~Alt,        action: ScrollPageUp,  }
   - { key: PageDown,  mode: ~Alt,        action: ScrollPageDown }
-  - { key: H,         mods: Control,     chars: "cd \x0D" }
+  - { key: H,         mods: Control,     chars: "cd ~\x0D" }
 
 # Shell
 # shell:
