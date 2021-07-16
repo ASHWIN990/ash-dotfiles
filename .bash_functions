@@ -27,9 +27,9 @@ function ls (){
 	fi
 }
 
-ex ()
 # # ex - archive extractor
 # # usage: ex <file>
+ex ()
 {
   if [ -f $1 ] ; then
     case $1 in
